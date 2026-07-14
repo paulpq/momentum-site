@@ -10,7 +10,7 @@ await rm(dist, { recursive: true, force: true });
 await mkdir(client, { recursive: true });
 await mkdir(server, { recursive: true });
 
-for (const asset of ["index.html", "styles.css", "script.js", "og.png"]) {
+for (const asset of ["index.html", "styles.css", "script.js", "og-volunteer.png"]) {
   await cp(resolve(root, asset), resolve(client, asset));
 }
 

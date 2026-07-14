@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="meta-description" name="description" content="Galeria Momentum — fotografii de la lecțiile gratuite de duminică.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Galerie — Momentum</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main" data-i18n="skipLink">Sari la conținut</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="/index.html" data-i18n-aria="brandHome">
+        <img src="/assets/momentum-logo.png" alt="Momentum — From knowledge to infinity">
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" data-i18n-aria="menuOpen"><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" data-i18n-aria="mainNavigation">
+        <a href="/index.html#about" data-i18n="navAbout">Despre noi</a>
+        <a href="/index.html#how" data-i18n="navHow">Cum funcționează</a>
+        <a href="/index.html#schedule" data-i18n="navSchedule">Program</a>
+        <a class="active" href="/gallery.html" data-i18n="navGallery">Galerie</a>
+        <a href="/index.html#contact" data-i18n="navContact">Contact</a>
+        <div class="languages" role="group" data-i18n-aria="languageSelect">
+          <button class="active" type="button" data-lang="ro" aria-pressed="true">RO</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="gallery-hero" id="gallery">
+      <div class="container gallery-hero-grid">
+        <p class="section-label">Galerie</p>
+        <div>
+          <h1 data-i18n="galleryTitle">Momente din Momentum.</h1>
+          <p data-i18n="galleryIntro">Aici vom publica fotografii reale de la lecțiile de duminică și din activitatea voluntarilor noștri.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-content">
+      <div class="container">
+        <div class="gallery-empty">
+          <span data-i18n="galleryEmptyLabel">Fotografii în curând</span>
+          <h2 data-i18n="galleryEmptyTitle">Galeria este pregătită pentru pozele voastre.</h2>
+          <p data-i18n="galleryEmptyBody">Nu folosim imagini generice sau inventate. Când ne trimiți fotografiile reale ale clubului, le adăugăm aici.</p>
+          <a href="mailto:hello@momentumclub.md?subject=Fotografii pentru galerie" data-i18n="galleryEmptyLink">Trimite fotografii</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div class="footer-logo"><img src="/assets/momentum-logo.png" alt="Momentum"></div>
+      <div><span>© <span id="year"></span> Momentum Club</span><span data-i18n="footerNote">Gratuit. De la elevi, pentru elevi.</span></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -26,8 +26,8 @@
   <meta name="twitter:image:alt" content="Momentum — clasele I–XII, în fiecare duminică, gratuit, ajutor la teme">
   <title>Galerie foto — Momentum</title>
   <script>document.documentElement.classList.add("js")</script>
-  <link rel="stylesheet" href="styles.css?v=20260715-2">
-  <script src="script.js?v=20260715-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260715-3">
+  <script src="script.js?v=20260715-3" defer></script>
 </head>
 <body data-page="gallery">
   <a class="skip-link" href="#main" data-i18n="skipLink">Sari la conținut</a>
@@ -74,22 +74,18 @@
     <div class="lightbox" hidden aria-hidden="true">
       <div class="lightbox-backdrop" data-lightbox-close></div>
       <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Galerie foto" data-i18n-aria="lightboxLabel">
-        <div class="lightbox-toolbar">
-          <div class="lightbox-heading">
-            <span class="lightbox-brand" aria-hidden="true">Momentum</span>
-            <p class="lightbox-date"></p>
+        <button class="lightbox-close" type="button" aria-label="Închide fotografia" data-i18n-aria="lightboxClose"><span aria-hidden="true">×</span></button>
+        <figure class="lightbox-figure">
+          <div class="lightbox-stage">
+            <button class="lightbox-arrow lightbox-previous" type="button" aria-label="Fotografia anterioară" data-i18n-aria="lightboxPrevious"><span aria-hidden="true">‹</span></button>
+            <div class="lightbox-preview"><img src="" alt="" data-lightbox-image></div>
+            <button class="lightbox-arrow lightbox-next" type="button" aria-label="Fotografia următoare" data-i18n-aria="lightboxNext"><span aria-hidden="true">›</span></button>
           </div>
-          <div class="lightbox-actions">
-            <p class="lightbox-counter" aria-live="polite" aria-atomic="true"></p>
-            <button class="lightbox-close" type="button" aria-label="Închide fotografia" data-i18n-aria="lightboxClose"><span aria-hidden="true">×</span></button>
-          </div>
-        </div>
-        <div class="lightbox-stage">
-          <button class="lightbox-arrow lightbox-previous" type="button" aria-label="Fotografia anterioară" data-i18n-aria="lightboxPrevious"><span aria-hidden="true">←</span></button>
-          <div class="lightbox-preview"><img src="" alt="" data-lightbox-image></div>
-          <button class="lightbox-arrow lightbox-next" type="button" aria-label="Fotografia următoare" data-i18n-aria="lightboxNext"><span aria-hidden="true">→</span></button>
-        </div>
-        <p class="lightbox-hint" data-i18n="lightboxHint">Folosește săgețile, rotița sau glisează pentru a continua.</p>
+          <figcaption class="lightbox-meta" aria-live="polite" aria-atomic="true">
+            <span class="lightbox-date"></span>
+            <span class="lightbox-counter"></span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </main>

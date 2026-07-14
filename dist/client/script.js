@@ -133,6 +133,7 @@ if (galleryList) {
       image.alt = "";
       image.loading = photoNumber <= 8 ? "eager" : "lazy";
       image.decoding = "async";
+      image.fetchPriority = photoNumber <= 4 ? "high" : "low";
       button.append(image);
       grid.append(button);
       photoNumber += 1;

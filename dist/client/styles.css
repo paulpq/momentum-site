@@ -29,6 +29,7 @@ img { display: block; max-width: 100%; }
 .main-nav { margin-left: auto; display: flex; align-items: center; gap: 27px; }
 .main-nav > a { color: var(--gray); font-size: .79rem; font-weight: 650; text-decoration: none; }
 .main-nav > a:hover, .main-nav > a.active { color: var(--navy); }
+.mobile-enroll { display: none; }
 .languages { display: flex; padding-left: 15px; border-left: 1px solid var(--line); }
 .languages button { padding: 4px 6px; border: 0; color: #8a9198; background: transparent; cursor: pointer; font-size: .67rem; font-weight: 700; }
 .languages button:hover, .languages button.active { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
@@ -148,8 +149,8 @@ footer { padding: 42px 0 24px; background: white; }
 @media (max-width: 900px) {
   .container { width: min(720px, calc(100% - 40px)); }
   .menu-button { display: block; }
-  .main-nav { position: fixed; inset: 82px 0 0; padding: 50px 24px max(32px,env(safe-area-inset-bottom)); display: flex; flex-direction: column; align-items: flex-start; gap: 24px; overflow-y: auto; background: white; opacity: 0; visibility: hidden; }
-  .main-nav.open { opacity: 1; visibility: visible; }
+  .main-nav { position: fixed; inset: 82px 0 0; padding: 50px 24px max(32px,env(safe-area-inset-bottom)); display: flex; flex-direction: column; align-items: flex-start; gap: 24px; overflow-y: auto; background: white; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-10px); transition: opacity .2s ease, transform .2s ease, visibility .2s; }
+  .main-nav.open { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
   .main-nav > a { font-family: var(--serif); font-size: 1.7rem; }
   .languages { margin-top: 12px; padding: 12px 0 0; border-top: 1px solid var(--line); border-left: 0; }
   .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
@@ -174,10 +175,17 @@ footer { padding: 42px 0 24px; background: white; }
   .logo { width: 178px; }
   .logo { width: 178px; height: 48px; }
   .logo img { top: -20px; left: -42px; width: 266px; }
-  .main-nav { inset: 72px 0 0; padding: 30px 20px max(28px,env(safe-area-inset-bottom)); gap: 8px; }
-  .main-nav > a { width: 100%; min-height: 48px; display: flex; align-items: center; font-size: 1.5rem; }
-  .languages { width: 100%; gap: 4px; margin-top: 10px; }
-  .languages button { min-width: 48px; min-height: 44px; padding: 10px 12px; }
+  .main-nav { inset: 72px 0 0; padding: 18px 16px max(24px,env(safe-area-inset-bottom)); gap: 0; background: var(--white); }
+  .main-nav > a { width: 100%; min-height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid var(--line); font-family: var(--sans); font-size: 1rem; font-weight: 700; }
+  .main-nav > a::after { content: "→"; color: #9ca3aa; font-size: 1rem; font-weight: 400; }
+  .main-nav > a.active { padding-left: 16px; color: var(--navy); background: var(--light); }
+  .main-nav > a.active::after { color: var(--navy); }
+  .main-nav .mobile-enroll { min-height: 56px; display: flex; margin-top: 20px; padding: 0 16px; color: white; background: var(--navy); border: 1px solid var(--navy); }
+  .main-nav .mobile-enroll.active { color: white; background: var(--navy-dark); }
+  .main-nav .mobile-enroll::after { color: white; }
+  .languages { width: 100%; justify-content: stretch; gap: 0; margin-top: 14px; padding: 6px; background: var(--light); border: 0; }
+  .languages button { flex: 1; min-width: 48px; min-height: 44px; padding: 10px 12px; }
+  .languages button.active { color: white; background: var(--navy); text-decoration: none; }
   .hero { padding: 64px 0 68px; }
   .statement, .section { padding: 68px 0; }
   .hero-grid { gap: 48px; }

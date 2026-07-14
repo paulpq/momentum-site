@@ -2,7 +2,7 @@ const translations = {
   ro: {
     pageTitle: "Momentum — lecții gratuite pentru clasele I–XII", metaDescription: "Lecții gratuite și ajutor la teme pentru elevii din clasele I–XII, în fiecare duminică.",
     skipLink: "Sari la conținut", brandHome: "Momentum — acasă", menuOpen: "Deschide meniul", menuClose: "Închide meniul", mainNavigation: "Navigare principală", languageSelect: "Selectează limba",
-    navAbout: "Despre noi", navHow: "Cum funcționează", navSchedule: "Program", navGallery: "Galerie", navJoin: "Implică-te", navContact: "Contact",
+    navAbout: "Despre noi", navHow: "Cum funcționează", navSchedule: "Program", navGallery: "Galerie", navJoin: "Implică-te", navContact: "Contact", navEnroll: "Înscrie-te",
     heroLabel: "Club educațional gratuit", heroTitle: "Lecții gratuite pentru elevii din clasele I–XII", heroBody: "Momentum este un club de voluntariat format din elevi medaliați la olimpiade republicane și internaționale. În fiecare duminică oferim ajutor la teme și explicații suplimentare elevilor din școlile de stat.", heroPrimary: "Cum funcționează", heroSecondary: "Scrie-ne",
     factTeacherLabel: "Cine predă?", factTeacherValue: "Elevi olimpici voluntari", factStudentLabel: "Pentru cine?", factStudentValue: "Elevi din clasele I–XII", factWhenLabel: "Când?", factWhenValue: "În fiecare duminică", factCostLabel: "Cât costă?", factCostValue: "Nimic. Este gratuit.",
     aboutLabel: "Despre Momentum", aboutTitle: "Despre club", aboutBody: "Momentum a fost fondat în 2020, în timpul pandemiei. Echipa include elevi medaliați la olimpiade republicane și internaționale de matematică, fizică, chimie și biologie. În cadrul lecțiilor, voluntarii îi ajută pe participanți să rezolve temele și să înțeleagă mai bine materia.",
@@ -16,7 +16,7 @@ const translations = {
   ru: {
     pageTitle: "Momentum — бесплатные занятия для 1–12 классов", metaDescription: "Бесплатные занятия и помощь с домашними заданиями для учеников 1–12 классов по воскресеньям.",
     skipLink: "Перейти к содержанию", brandHome: "Momentum — главная", menuOpen: "Открыть меню", menuClose: "Закрыть меню", mainNavigation: "Основная навигация", languageSelect: "Выбрать язык",
-    navAbout: "О нас", navHow: "Как это работает", navSchedule: "Расписание", navGallery: "Галерея", navJoin: "Присоединиться", navContact: "Контакты",
+    navAbout: "О нас", navHow: "Как это работает", navSchedule: "Расписание", navGallery: "Галерея", navJoin: "Присоединиться", navContact: "Контакты", navEnroll: "Записаться",
     heroLabel: "Бесплатный образовательный клуб", heroTitle: "Бесплатные занятия для учеников 1–12 классов", heroBody: "Momentum — волонтёрский клуб, созданный школьниками — призёрами республиканских и международных олимпиад. Каждое воскресенье мы бесплатно помогаем ученикам государственных школ с домашними заданиями и дополнительными объяснениями.", heroPrimary: "Как это работает", heroSecondary: "Написать нам",
     factTeacherLabel: "Кто преподаёт?", factTeacherValue: "Школьники-олимпиадники", factStudentLabel: "Для кого?", factStudentValue: "Для учеников 1–12 классов", factWhenLabel: "Когда?", factWhenValue: "Каждое воскресенье", factCostLabel: "Сколько стоит?", factCostValue: "Нисколько. Это бесплатно.",
     aboutLabel: "О Momentum", aboutTitle: "О клубе", aboutBody: "Momentum был основан в 2020 году, во время пандемии. В команду входят призёры республиканских и международных олимпиад по математике, физике, химии и биологии. Во время занятий волонтёры помогают участникам выполнять домашние задания и лучше понимать учебный материал.",
@@ -30,7 +30,7 @@ const translations = {
   en: {
     pageTitle: "Momentum — free lessons for grades 1–12", metaDescription: "Free lessons and homework support for students in grades 1–12 every Sunday.",
     skipLink: "Skip to content", brandHome: "Momentum — home", menuOpen: "Open menu", menuClose: "Close menu", mainNavigation: "Main navigation", languageSelect: "Select language",
-    navAbout: "About us", navHow: "How it works", navSchedule: "Schedule", navGallery: "Gallery", navJoin: "Get involved", navContact: "Contact",
+    navAbout: "About us", navHow: "How it works", navSchedule: "Schedule", navGallery: "Gallery", navJoin: "Get involved", navContact: "Contact", navEnroll: "Enroll",
     heroLabel: "Free education club", heroTitle: "Free lessons for students in grades 1–12", heroBody: "Momentum is a volunteer club formed by medalists of national and international olympiads. Every Sunday, we provide homework support and additional explanations to students from state schools.", heroPrimary: "How it works", heroSecondary: "Write to us",
     factTeacherLabel: "Who teaches?", factTeacherValue: "Volunteer olympiad students", factStudentLabel: "Who is it for?", factStudentValue: "Students in grades 1–12", factWhenLabel: "When?", factWhenValue: "Every Sunday", factCostLabel: "What does it cost?", factCostValue: "Nothing. It is free.",
     aboutLabel: "About Momentum", aboutTitle: "About the club", aboutBody: "Momentum was founded in 2020 during the pandemic. The team includes medalists of national and international olympiads in mathematics, physics, chemistry, and biology. During lessons, volunteers help participants complete homework and understand the subject material.",

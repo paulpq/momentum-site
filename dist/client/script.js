@@ -1,52 +1,51 @@
 const translations = {
   ro: {
-    pageTitle: "Momentum Club — Învățăm împreună",
-    metaDescription: "Momentum Club — un club educațional gratuit, creat de voluntari pentru elevi curioși.",
-    brandHome: "Momentum Club — acasă", menuOpen: "Deschide meniul", menuClose: "Închide meniul", mainNavigation: "Navigare principală", languageSelect: "Selectează limba", skipLink: "Sari la conținut",
-    navApproach: "Abordare", navPrograms: "Programe", navJourney: "Cum începi", navContact: "Contact",
-    heroEyebrow: "Club educațional gratuit, creat de voluntari", heroTitle: "Învățăm împreună.<br><em>Creștem împreună.</em>", heroCopy: "Momentum aduce împreună voluntari pasionați și elevi curioși. Oferim explicații clare, activități practice și sprijin la învățare — complet gratuit.", discoverPrograms: "Descoperă programele", learnMethod: "Vezi cum lucrăm", visualQuestion: "Întreabă", visualExplore: "Explorează", heroFooter: "Un mediu în care curiozitatea are loc să crească.", signalFree: "gratuit", signalVolunteers: "voluntari",
-    marqueeOne: "Curiozitate", marqueeTwo: "Claritate", marqueeThree: "Consecvență", marqueeFour: "Încredere",
-    approachKicker: "Abordarea noastră", approachTitle: "Educația crește atunci când oamenii aleg să ofere mai departe.", clearTitle: "Acces fără costuri", clearBody: "Participarea este gratuită. Credem că dorința de a învăța trebuie susținută, nu condiționată.", practiceTitle: "Voluntari care împărtășesc", practiceBody: "Oameni pasionați oferă din timpul și cunoștințele lor pentru a face subiectele mai clare și mai vii.", feedbackTitle: "Învățare cu răbdare", feedbackBody: "Punem întrebări, încercăm, greșim și explicăm din nou. Fiecare elev are loc să învețe în ritmul său.",
-    programsKicker: "Programe", programsTitle: "Trei moduri de a<br>învăța împreună.", programsBody: "Atelierele și sesiunile sunt susținute gratuit de voluntarii noștri, în funcție de disponibilitate.", scienceTag: "Explorează", scienceTitle: "Ateliere de știință", scienceBody: "Experimente, logică și concepte mari explicate prin exemple pe care le poți vedea și testa.", thinkingTag: "Analizează", thinkingTitle: "Gândire critică", thinkingBody: "Învățăm să punem întrebări bune, să construim argumente și să verificăm informația.", mentoringTag: "Avansează", mentoringTitle: "Mentorat academic", mentoringBody: "Ajutor oferit de voluntari pentru obiective, organizare și obiceiuri de învățare mai bune.", scienceLinkLabel: "Întreabă despre atelierele de știință", thinkingLinkLabel: "Întreabă despre programul Gândire critică", mentoringLinkLabel: "Întreabă despre mentorat academic",
-    journeyKicker: "Cum începi", journeyTitle: "Simplu, deschis și fără costuri.", journeyBody: "Spune-ne ce vrei să înveți, iar noi vedem cum te putem conecta cu activitățile și voluntarii disponibili.", stepOneTitle: "Ne scrii", stepOneBody: "Ne spui ce subiecte te interesează sau unde ai nevoie de sprijin.", stepTwoTitle: "Găsim potrivirea", stepTwoBody: "Verificăm ce activități și voluntari sunt disponibili în perioada respectivă.", stepThreeTitle: "Învățăm împreună", stepThreeBody: "Participi gratuit, pui întrebări și îți construiești progresul pas cu pas.",
-    manifestoQuote: "Cunoașterea devine mai valoroasă atunci când este <em>oferită mai departe</em>.", manifestoCaption: "Momentum există datorită oamenilor care aleg să contribuie.",
-    contactKicker: "Următorul pas", contactTitle: "Vrei să înveți sau să devii voluntar?", contactBody: "Scrie-ne dacă vrei să participi, să ajuți la predare sau să susții comunitatea. Îți răspundem cu următorii pași.", contactButton: "Scrie-ne", footerNavigate: "Navigare", footerContact: "Contact", footerNote: "Gratuit. Comunitar. Creat de voluntari."
+    pageTitle: "Momentum — de la elevi, pentru elevi", metaDescription: "Momentum — club gratuit în care elevii olimpici predau voluntar elevilor din școlile de stat.",
+    skipLink: "Sari la conținut", brandHome: "Momentum — acasă", menuOpen: "Deschide meniul", menuClose: "Închide meniul", mainNavigation: "Navigare principală", languageSelect: "Selectează limba",
+    navAbout: "Despre noi", navHow: "Cum funcționează", navJoin: "Implică-te", navContact: "Contact",
+    heroLabel: "Club educațional gratuit", heroTitle: "Elevi olimpici îi ajută pe elevii din școlile de stat.", heroBody: "Momentum este un grup de voluntari format din elevi cu experiență la olimpiade. Predăm gratuit, clar și prietenos colegilor care vor să înțeleagă mai bine.", heroPrimary: "Cum funcționează", heroSecondary: "Scrie-ne",
+    factTeacherLabel: "Cine predă?", factTeacherValue: "Elevi olimpici voluntari", factStudentLabel: "Pentru cine?", factStudentValue: "Elevi din școlile de stat", factCostLabel: "Cât costă?", factCostValue: "Nimic. Este gratuit.",
+    aboutLabel: "Despre Momentum", aboutTitle: "De la elevi, pentru elevi.", aboutBody: "Știm cum este să te blochezi la o problemă și cât de mult ajută o explicație spusă pe limba ta. De aceea, elevii olimpici din Momentum își oferă timpul și cunoștințele pentru colegii din școlile de stat.",
+    principleFreeTitle: "Fără taxe", principleFreeBody: "Lecțiile și activitățile sunt gratuite. Accesul la explicații bune nu ar trebui să depindă de buget.", principlePeerTitle: "Aproape de vârsta ta", principlePeerBody: "Profesorii noștri sunt tot elevi. Înțeleg întrebările, emoțiile și ritmul colegilor lor.", principleExperienceTitle: "Experiență reală", principleExperienceBody: "Voluntarii folosesc ce au învățat la olimpiade pentru a explica simplu, nu pentru a impresiona.",
+    howLabel: "Cum funcționează", howTitle: "Simplu și direct.", stepOneTitle: "Ne spui ce vrei să înveți", stepOneBody: "Scrie-ne despre materia sau tema la care ai nevoie de ajutor.", stepTwoTitle: "Găsim un voluntar", stepTwoBody: "Verificăm cine din echipă are experiența și timpul potrivit.", stepThreeTitle: "Învățăm împreună", stepThreeBody: "Lucrăm clar, fără presiune și fără costuri.", availability: "Materiile și programul depind de voluntarii disponibili.",
+    joinLabel: "Implică-te", joinTitle: "Ai loc în Momentum.", studentCardLabel: "Vreau să învăț", studentCardTitle: "Ești elev la o școală de stat?", studentCardBody: "Spune-ne unde ai nevoie de ajutor. Dacă avem un voluntar disponibil, te conectăm cu el.", studentCardLink: "Cere ajutor", volunteerCardLabel: "Vreau să predau", volunteerCardTitle: "Participi la olimpiade?", volunteerCardBody: "Dacă vrei să oferi din timpul și cunoștințele tale, scrie-ne. Construim echipa cu grijă.", volunteerCardLink: "Devino voluntar",
+    contactLabel: "Contact", contactTitle: "O întrebare este un început bun.", contactBody: "Scrie-ne dacă vrei să înveți, să predai sau doar să afli mai multe despre club.", footerNote: "Gratuit. De la elevi, pentru elevi."
   },
   ru: {
-    pageTitle: "Momentum Club — Учимся вместе", metaDescription: "Momentum Club — бесплатный образовательный клуб, созданный волонтёрами для любознательных школьников.",
-    brandHome: "Momentum Club — главная", menuOpen: "Открыть меню", menuClose: "Закрыть меню", mainNavigation: "Основная навигация", languageSelect: "Выбрать язык", skipLink: "Перейти к содержанию",
-    navApproach: "Подход", navPrograms: "Программы", navJourney: "Как начать", navContact: "Контакты",
-    heroEyebrow: "Бесплатный образовательный клуб волонтёров", heroTitle: "Учимся вместе.<br><em>Растём вместе.</em>", heroCopy: "Momentum объединяет увлечённых волонтёров и любознательных школьников. Понятные объяснения, практические занятия и помощь в учёбе — полностью бесплатно.", discoverPrograms: "Выбрать программу", learnMethod: "Как мы работаем", visualQuestion: "Спрашивай", visualExplore: "Исследуй", heroFooter: "Среда, в которой любознательность может расти.", signalFree: "бесплатно", signalVolunteers: "волонтёры",
-    marqueeOne: "Любознательность", marqueeTwo: "Ясность", marqueeThree: "Постоянство", marqueeFour: "Уверенность",
-    approachKicker: "Наш подход", approachTitle: "Образование растёт, когда люди решают делиться знаниями.", clearTitle: "Доступ без оплаты", clearBody: "Участие бесплатное. Мы верим, что желание учиться нужно поддерживать, а не ограничивать.", practiceTitle: "Волонтёры делятся знаниями", practiceBody: "Увлечённые люди отдают своё время и знания, чтобы сделать сложные темы понятнее и живее.", feedbackTitle: "Учёба с терпением", feedbackBody: "Задаём вопросы, пробуем, ошибаемся и объясняем снова. Каждый может учиться в своём темпе.",
-    programsKicker: "Программы", programsTitle: "Три способа<br>учиться вместе.", programsBody: "Занятия проводят наши волонтёры бесплатно, в зависимости от их доступности.", scienceTag: "Исследуй", scienceTitle: "Научные мастерские", scienceBody: "Эксперименты, логика и большие идеи на примерах, которые можно увидеть и проверить.", thinkingTag: "Анализируй", thinkingTitle: "Критическое мышление", thinkingBody: "Учимся задавать точные вопросы, строить аргументы и проверять информацию.", mentoringTag: "Развивайся", mentoringTitle: "Академическое наставничество", mentoringBody: "Помощь волонтёров с целями, организацией и полезными учебными привычками.", scienceLinkLabel: "Узнать о научных мастерских", thinkingLinkLabel: "Узнать о программе Критическое мышление", mentoringLinkLabel: "Узнать об академическом наставничестве",
-    journeyKicker: "Как начать", journeyTitle: "Просто, открыто и бесплатно.", journeyBody: "Расскажите, чему хотите научиться, а мы подберём доступные занятия и волонтёров.", stepOneTitle: "Напишите нам", stepOneBody: "Расскажите, какие темы интересуют или где нужна поддержка.", stepTwoTitle: "Найдём подходящий формат", stepTwoBody: "Проверим, какие занятия и волонтёры доступны в это время.", stepThreeTitle: "Учимся вместе", stepThreeBody: "Участвуйте бесплатно, задавайте вопросы и двигайтесь вперёд шаг за шагом.",
-    manifestoQuote: "Знание становится ценнее, когда им <em>делятся с другими</em>.", manifestoCaption: "Momentum существует благодаря людям, которые решают помогать.",
-    contactKicker: "Следующий шаг", contactTitle: "Хотите учиться или стать волонтёром?", contactBody: "Напишите нам, если хотите участвовать, помогать с занятиями или поддержать сообщество. Мы расскажем о следующих шагах.", contactButton: "Написать нам", footerNavigate: "Навигация", footerContact: "Контакты", footerNote: "Бесплатно. Вместе. Создано волонтёрами."
+    pageTitle: "Momentum — ученики для учеников", metaDescription: "Momentum — бесплатный клуб, где олимпиадники-волонтёры помогают ученикам государственных школ.",
+    skipLink: "Перейти к содержанию", brandHome: "Momentum — главная", menuOpen: "Открыть меню", menuClose: "Закрыть меню", mainNavigation: "Основная навигация", languageSelect: "Выбрать язык",
+    navAbout: "О нас", navHow: "Как это работает", navJoin: "Присоединиться", navContact: "Контакты",
+    heroLabel: "Бесплатный образовательный клуб", heroTitle: "Олимпиадники помогают ученикам государственных школ.", heroBody: "Momentum — это команда школьников-волонтёров с олимпиадным опытом. Мы бесплатно, понятно и по-дружески помогаем ровесникам лучше разбираться в учёбе.", heroPrimary: "Как это работает", heroSecondary: "Написать нам",
+    factTeacherLabel: "Кто преподаёт?", factTeacherValue: "Школьники-олимпиадники", factStudentLabel: "Для кого?", factStudentValue: "Для учеников государственных школ", factCostLabel: "Сколько стоит?", factCostValue: "Нисколько. Это бесплатно.",
+    aboutLabel: "О Momentum", aboutTitle: "От учеников — ученикам.", aboutBody: "Мы знаем, каково застрять на задаче и как помогает объяснение на понятном языке. Поэтому олимпиадники Momentum делятся своим временем и знаниями с учениками государственных школ.",
+    principleFreeTitle: "Без оплаты", principleFreeBody: "Все занятия бесплатны. Доступ к хорошим объяснениям не должен зависеть от бюджета.", principlePeerTitle: "Ровесники", principlePeerBody: "Наши преподаватели тоже школьники. Они понимают вопросы, переживания и темп своих ровесников.", principleExperienceTitle: "Настоящий опыт", principleExperienceBody: "Волонтёры используют олимпиадный опыт, чтобы объяснять проще, а не чтобы впечатлять.",
+    howLabel: "Как это работает", howTitle: "Просто и понятно.", stepOneTitle: "Расскажите, чему хотите научиться", stepOneBody: "Напишите, по какому предмету или теме нужна помощь.", stepTwoTitle: "Мы найдём волонтёра", stepTwoBody: "Проверим, у кого в команде есть подходящий опыт и время.", stepThreeTitle: "Учимся вместе", stepThreeBody: "Разбираемся спокойно, понятно и бесплатно.", availability: "Предметы и расписание зависят от доступности волонтёров.",
+    joinLabel: "Присоединиться", joinTitle: "Для вас есть место в Momentum.", studentCardLabel: "Хочу учиться", studentCardTitle: "Вы учитесь в государственной школе?", studentCardBody: "Расскажите, где нужна помощь. Если подходящий волонтёр свободен, мы вас свяжем.", studentCardLink: "Попросить помощь", volunteerCardLabel: "Хочу преподавать", volunteerCardTitle: "Участвуете в олимпиадах?", volunteerCardBody: "Если хотите делиться временем и знаниями, напишите нам. Мы внимательно формируем команду.", volunteerCardLink: "Стать волонтёром",
+    contactLabel: "Контакты", contactTitle: "Хороший вопрос — хорошее начало.", contactBody: "Напишите, если хотите учиться, преподавать или просто узнать о клубе больше.", footerNote: "Бесплатно. От учеников — ученикам."
   },
   en: {
-    pageTitle: "Momentum Club — Learning together", metaDescription: "Momentum Club — a free educational club created by volunteers for curious students.",
-    brandHome: "Momentum Club — home", menuOpen: "Open menu", menuClose: "Close menu", mainNavigation: "Main navigation", languageSelect: "Select language", skipLink: "Skip to content",
-    navApproach: "Approach", navPrograms: "Programs", navJourney: "How to start", navContact: "Contact",
-    heroEyebrow: "A free education club created by volunteers", heroTitle: "Learning together.<br><em>Growing together.</em>", heroCopy: "Momentum brings passionate volunteers and curious students together. We offer clear explanations, hands-on activities, and learning support — completely free.", discoverPrograms: "Explore programs", learnMethod: "See how we work", visualQuestion: "Question", visualExplore: "Explore", heroFooter: "A place where curiosity has room to grow.", signalFree: "free", signalVolunteers: "volunteers",
-    marqueeOne: "Curiosity", marqueeTwo: "Clarity", marqueeThree: "Consistency", marqueeFour: "Confidence",
-    approachKicker: "Our approach", approachTitle: "Education grows when people choose to pass knowledge on.", clearTitle: "Access without cost", clearBody: "Participation is free. We believe the desire to learn should be supported, never limited by cost.", practiceTitle: "Volunteers who share", practiceBody: "Passionate people give their time and knowledge to make subjects clearer, friendlier, and more alive.", feedbackTitle: "Learning with patience", feedbackBody: "We ask, try, make mistakes, and explain again. Every student has room to learn at their own pace.",
-    programsKicker: "Programs", programsTitle: "Three ways to<br>learn together.", programsBody: "Our workshops and sessions are led by volunteers at no cost, depending on availability.", scienceTag: "Explore", scienceTitle: "Science workshops", scienceBody: "Experiments, logic, and big concepts explained through examples you can see and test.", thinkingTag: "Analyze", thinkingTitle: "Critical thinking", thinkingBody: "Learn to ask better questions, build arguments, and verify information.", mentoringTag: "Advance", mentoringTitle: "Academic mentoring", mentoringBody: "Volunteer support for goals, organization, and stronger learning habits.", scienceLinkLabel: "Ask about Science workshops", thinkingLinkLabel: "Ask about Critical thinking", mentoringLinkLabel: "Ask about Academic mentoring",
-    journeyKicker: "How to start", journeyTitle: "Simple, open, and free.", journeyBody: "Tell us what you want to learn, and we'll connect you with the activities and volunteers currently available.", stepOneTitle: "Write to us", stepOneBody: "Tell us which subjects interest you or where you need support.", stepTwoTitle: "We find the right fit", stepTwoBody: "We check which activities and volunteers are available at the time.", stepThreeTitle: "We learn together", stepThreeBody: "Join for free, ask questions, and build progress one step at a time.",
-    manifestoQuote: "Knowledge becomes more valuable when it is <em>passed on</em>.", manifestoCaption: "Momentum exists because people choose to contribute.",
-    contactKicker: "Next step", contactTitle: "Want to learn or volunteer?", contactBody: "Write to us if you'd like to join, help teach, or support the community. We'll reply with the next steps.", contactButton: "Write to us", footerNavigate: "Navigate", footerContact: "Contact", footerNote: "Free. Community-powered. Volunteer-made."
+    pageTitle: "Momentum — students teaching students", metaDescription: "Momentum — a free club where olympiad students volunteer to teach students from state schools.",
+    skipLink: "Skip to content", brandHome: "Momentum — home", menuOpen: "Open menu", menuClose: "Close menu", mainNavigation: "Main navigation", languageSelect: "Select language",
+    navAbout: "About us", navHow: "How it works", navJoin: "Get involved", navContact: "Contact",
+    heroLabel: "Free education club", heroTitle: "Olympiad students help students from state schools.", heroBody: "Momentum is a volunteer group of students with olympiad experience. We teach our peers for free, with clear explanations and a friendly approach.", heroPrimary: "How it works", heroSecondary: "Write to us",
+    factTeacherLabel: "Who teaches?", factTeacherValue: "Volunteer olympiad students", factStudentLabel: "Who is it for?", factStudentValue: "Students from state schools", factCostLabel: "What does it cost?", factCostValue: "Nothing. It is free.",
+    aboutLabel: "About Momentum", aboutTitle: "By students, for students.", aboutBody: "We know what it feels like to get stuck on a problem—and how much a peer's explanation can help. That is why Momentum's olympiad students share their time and knowledge with students from state schools.",
+    principleFreeTitle: "No fees", principleFreeBody: "Lessons and activities are free. Access to good explanations should not depend on a family's budget.", principlePeerTitle: "Close to your age", principlePeerBody: "Our teachers are students too. They understand their peers' questions, nerves, and pace.", principleExperienceTitle: "Real experience", principleExperienceBody: "Volunteers use what they learned through olympiads to explain simply, not to impress.",
+    howLabel: "How it works", howTitle: "Simple and direct.", stepOneTitle: "Tell us what you want to learn", stepOneBody: "Write to us about the subject or topic where you need help.", stepTwoTitle: "We find a volunteer", stepTwoBody: "We check who on the team has the right experience and time.", stepThreeTitle: "We learn together", stepThreeBody: "We work clearly, without pressure and without cost.", availability: "Subjects and schedules depend on volunteer availability.",
+    joinLabel: "Get involved", joinTitle: "There is a place for you in Momentum.", studentCardLabel: "I want to learn", studentCardTitle: "Are you a state-school student?", studentCardBody: "Tell us where you need help. If a suitable volunteer is available, we will connect you.", studentCardLink: "Ask for help", volunteerCardLabel: "I want to teach", volunteerCardTitle: "Do you take part in olympiads?", volunteerCardBody: "If you want to share your time and knowledge, write to us. We build the team with care.", volunteerCardLink: "Become a volunteer",
+    contactLabel: "Contact", contactTitle: "A question is a good place to start.", contactBody: "Write to us if you want to learn, teach, or simply find out more about the club.", footerNote: "Free. By students, for students."
   }
 };
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".nav-links");
+const menuButton = document.querySelector(".menu-button");
+const navigation = document.querySelector(".main-nav");
 const languageButtons = document.querySelectorAll("[data-lang]");
 const metaDescription = document.querySelector("#meta-description");
 let currentLanguage = "ro";
 
 function updateMenuLabel() {
   const key = navigation.classList.contains("open") ? "menuClose" : "menuOpen";
-  menuToggle.setAttribute("aria-label", translations[currentLanguage][key]);
+  menuButton.setAttribute("aria-label", translations[currentLanguage][key]);
 }
 
 function setLanguage(language) {
@@ -58,7 +57,7 @@ function setLanguage(language) {
   metaDescription.setAttribute("content", copy.metaDescription);
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = copy[element.dataset.i18n];
-    if (value) element.innerHTML = value;
+    if (value) element.textContent = value;
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
     const value = copy[element.dataset.i18nAria];
@@ -76,14 +75,14 @@ function setLanguage(language) {
 function closeMenu() {
   navigation.classList.remove("open");
   document.body.classList.remove("menu-open");
-  menuToggle.setAttribute("aria-expanded", "false");
+  menuButton.setAttribute("aria-expanded", "false");
   updateMenuLabel();
 }
 
-menuToggle.addEventListener("click", () => {
+menuButton.addEventListener("click", () => {
   const open = navigation.classList.toggle("open");
   document.body.classList.toggle("menu-open", open);
-  menuToggle.setAttribute("aria-expanded", String(open));
+  menuButton.setAttribute("aria-expanded", String(open));
   updateMenuLabel();
 });
 
@@ -91,27 +90,15 @@ navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click"
 languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
 document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeMenu(); });
 
-const navLinks = document.querySelectorAll(".nav-links > a");
-const sections = document.querySelectorAll("main section[id]");
 if ("IntersectionObserver" in window) {
-  const sectionObserver = new IntersectionObserver((entries) => {
+  const links = document.querySelectorAll(".main-nav > a");
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      navLinks.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
+      links.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
     });
   }, { rootMargin: "-35% 0px -58%", threshold: 0 });
-  sections.forEach((section) => sectionObserver.observe(section));
-
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("visible");
-      revealObserver.unobserve(entry.target);
-    });
-  }, { threshold: .12 });
-  document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
-} else {
-  document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
+  document.querySelectorAll("main section[id]").forEach((section) => observer.observe(section));
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();

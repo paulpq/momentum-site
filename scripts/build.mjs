@@ -10,9 +10,10 @@ await rm(dist, { recursive: true, force: true });
 await mkdir(client, { recursive: true });
 await mkdir(server, { recursive: true });
 
-for (const asset of ["index.html", "styles.css", "script.js", "og-volunteer.png"]) {
+for (const asset of ["index.html", "styles.css", "script.js", "og-minimal.png"]) {
   await cp(resolve(root, asset), resolve(client, asset));
 }
+await cp(resolve(root, "public/assets"), resolve(client, "assets"), { recursive: true });
 
 await writeFile(resolve(server, "index.js"), `export default {
   async fetch(request, env) {

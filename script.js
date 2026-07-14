@@ -74,6 +74,7 @@ function setLanguage(language) {
     const value = copy[element.dataset.i18nTitle];
     if (value) element.setAttribute("title", value);
   });
+  updateGalleryDates(language);
   languageButtons.forEach((button) => {
     const active = button.dataset.lang === language;
     button.classList.toggle("active", active);
@@ -101,28 +102,52 @@ navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click"
 languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
 document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeMenu(); });
 
-const galleryGrid = document.querySelector("[data-gallery-grid]");
+const galleryList = document.querySelector("[data-gallery-list]");
+const galleryGroups = [["2026-05-11",6],["2026-05-03",4],["2026-03-29",2],["2026-03-22",2],["2026-03-15",2],["2026-03-01",2],["2026-02-15",2],["2026-01-18",4],["2025-12-14",4],["2025-12-07",2],["2025-11-30",3],["2025-11-23",2],["2025-11-17",4],["2025-11-09",4],["2025-10-19",3],["2025-10-12",3],["2025-10-05",4],["2025-09-28",5],["2025-09-21",4],["2025-09-14",6],["2025-09-08",1],["2025-04-03",4],["2025-03-27",2],["2025-03-13",3],["2025-02-27",3],["2025-02-14",3],["2025-02-05",4],["2025-01-29",3],["2025-01-22",4],["2025-01-15",3],["2025-01-09",1],["2024-12-18",3],["2024-12-11",6],["2024-11-27",5],["2024-11-20",4],["2024-11-13",4],["2024-11-06",3],["2024-10-22",7],["2024-10-16",4],["2024-10-08",3],["2024-10-02",7],["2024-09-25",5],["2024-09-22",1],["2024-09-15",5],["2024-09-08",1],["2024-04-21",1],["2024-04-14",4],["2024-04-06",5],["2024-03-30",4],["2024-03-23",4],["2024-03-09",4],["2024-03-02",5],["2024-02-24",4],["2024-02-17",5],["2024-02-09",7],["2024-02-02",3],["2024-01-18",1],["2023-12-19",4],["2023-12-16",3],["2023-12-06",3],["2023-11-22",4],["2023-11-15",3],["2023-11-01",2],["2023-10-26",5],["2023-10-17",5],["2023-10-10",3],["2023-10-02",4],["2023-09-24",4],["2023-09-17",1],["2022-03-12",4],["2022-03-01",7],["2022-02-21",3],["2021-12-17",6],["2021-11-24",7],["2021-11-16",10],["2021-11-07",10],["2021-11-02",10],["2021-06-07",1],["2021-06-06",1],["2021-05-15",1],["2021-05-10",1],["2021-05-09",1],["2021-03-31",1],["2021-03-15",1],["2021-03-01",1],["2021-01-29",1],["2021-01-22",1],["2020-12-18",1],["2020-12-17",1],["2020-12-16",1],["2020-12-05",2],["2020-11-18",1]];
 
-if (galleryGrid) {
-  const photoCount = 318;
+if (galleryList) {
   const fragment = document.createDocumentFragment();
-  for (let number = 1; number <= photoCount; number += 1) {
-    const extension = (number >= 70 && number <= 157) || (number >= 246 && number <= 259) ? "webp" : "jpg";
-    const paddedNumber = String(number).padStart(3, "0");
-    const button = document.createElement("button");
-    const image = document.createElement("img");
-    button.className = "gallery-item";
-    button.type = "button";
-    button.dataset.i18nAria = "galleryOpen";
-    button.setAttribute("aria-label", "Deschide fotografia");
-    image.src = `/assets/gallery-all/momentum-${paddedNumber}.${extension}`;
-    image.alt = "";
-    image.loading = number <= 8 ? "eager" : "lazy";
-    image.decoding = "async";
-    button.append(image);
-    fragment.append(button);
-  }
-  galleryGrid.append(fragment);
+  let photoNumber = 1;
+  galleryGroups.forEach(([date, count]) => {
+    const group = document.createElement("section");
+    const heading = document.createElement("h2");
+    const time = document.createElement("time");
+    const grid = document.createElement("div");
+    group.className = "gallery-date-group";
+    heading.className = "gallery-date";
+    time.dateTime = date;
+    time.dataset.galleryDate = date;
+    grid.className = "gallery-grid";
+    heading.append(time);
+    group.append(heading, grid);
+    for (let item = 0; item < count; item += 1) {
+      const extension = (photoNumber >= 70 && photoNumber <= 157) || (photoNumber >= 246 && photoNumber <= 259) ? "webp" : "jpg";
+      const paddedNumber = String(photoNumber).padStart(3, "0");
+      const button = document.createElement("button");
+      const image = document.createElement("img");
+      button.className = "gallery-item";
+      button.type = "button";
+      button.dataset.i18nAria = "galleryOpen";
+      button.setAttribute("aria-label", "Deschide fotografia");
+      image.src = `/assets/gallery-all/momentum-${paddedNumber}.${extension}`;
+      image.alt = "";
+      image.loading = photoNumber <= 8 ? "eager" : "lazy";
+      image.decoding = "async";
+      button.append(image);
+      grid.append(button);
+      photoNumber += 1;
+    }
+    fragment.append(group);
+  });
+  galleryList.append(fragment);
+}
+
+function updateGalleryDates(language) {
+  const locales = { ro: "ro-MD", ru: "ru-MD", en: "en-GB" };
+  const formatter = new Intl.DateTimeFormat(locales[language] || locales.ro, { day: "numeric", month: "long", year: "numeric" });
+  document.querySelectorAll("[data-gallery-date]").forEach((time) => {
+    time.textContent = formatter.format(new Date(`${time.dataset.galleryDate}T12:00:00`));
+  });
 }
 
 const galleryItems = [...document.querySelectorAll(".gallery-item")];

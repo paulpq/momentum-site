@@ -106,6 +106,8 @@ h1 { max-width: 780px; margin-bottom: 28px; color: var(--navy); font-family: var
 .gallery-hero h1 { max-width: none; margin: 0 0 22px; font-size: clamp(3rem, 5.5vw, 5.4rem); }
 .gallery-hero p:not(.section-label) { max-width: 650px; margin: 0; color: var(--gray); font-size: 1.04rem; }
 .gallery-content { padding: 90px 0 120px; }
+.gallery-date-group + .gallery-date-group { margin-top: 62px; }
+.gallery-date { margin: 0 0 18px; padding-top: 16px; color: var(--navy); border-top: 1px solid var(--line); font-size: .74rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
 .gallery-item { display: block; aspect-ratio: 4/3; overflow: hidden; padding: 0; border: 0; background: var(--light); cursor: zoom-in; content-visibility: auto; contain-intrinsic-size: 300px 225px; }
 .gallery-item img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .25s ease; }

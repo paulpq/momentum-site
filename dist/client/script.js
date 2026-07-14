@@ -11,7 +11,7 @@ const translations = {
     scheduleLabel: "Program și locație", scheduleTitle: "Program și locație", scheduleBody: "Lecțiile au loc în fiecare duminică la Biblioteca Națională pentru Copii „Ion Creangă”, în Sala de lectură a Secției pentru Adolescenți.", locationDayLabel: "Ziua", locationDayValue: "În fiecare duminică", locationAddressLabel: "Adresa", locationAddressValue: "str. Alexei Șciusev 65, Chișinău", locationEntranceLabel: "Intrarea", locationEntranceValue: "Din str. Pușkin, scara 1", locationRoomLabel: "Sala", locationRoomValue: "Secția pentru Adolescenți — Sala de lectură", openMap: "Deschide în Google Maps", mapTitle: "Harta Bibliotecii Naționale pentru Copii Ion Creangă",
     joinLabel: "Implică-te", joinTitle: "Participare", enrollLabel: "Înscriere la club", enrollTitle: "Înscrie-te la Momentum", enrollBody: "Completează formularul în limba în care îți este mai comod. Participarea este gratuită.", enrollRomanian: "Formular în română", enrollRussian: "Formular în rusă", studentCardLabel: "Vreau să învăț", studentCardTitle: "Pentru elevi", studentCardBody: "Pentru participare, scrie-ne clasa și materia la care ai nevoie de ajutor. Confirmăm în funcție de voluntarii disponibili.", studentCardLink: "Cere ajutor", volunteerCardLabel: "Vreau să predau", volunteerCardTitle: "Pentru voluntari", volunteerCardBody: "Elevii care participă la olimpiade și doresc să predea se pot înscrie prin e-mail.", volunteerCardLink: "Devino voluntar",
     contactLabel: "Contact", contactTitle: "Contact", contactBody: "Pentru informații despre lecții, participare sau voluntariat, ne poți contacta prin e-mail.", footerNote: "Club educațional gratuit",
-    galleryPageTitle: "Galerie — Momentum", galleryMetaDescription: "Galeria Momentum — fotografii de la lecțiile gratuite de duminică.", galleryTitle: "Galerie foto", galleryIntro: "Fotografii de la lecțiile și activitățile Momentum.", galleryPlaceholder: "Loc rezervat pentru fotografie", galleryOpen: "Deschide fotografia", lightboxLabel: "Galerie foto", lightboxClose: "Închide fotografia", lightboxPrevious: "Fotografia anterioară", lightboxNext: "Fotografia următoare"
+    galleryPageTitle: "Galerie — Momentum", galleryMetaDescription: "Galeria Momentum — fotografii de la lecțiile gratuite de duminică.", galleryTitle: "Galerie foto", galleryIntro: "Fotografii de la lecțiile și activitățile Momentum.", gallerySource: "Fotografii de pe contul oficial", galleryPlaceholder: "Loc rezervat pentru fotografie", galleryOpen: "Deschide fotografia", lightboxLabel: "Galerie foto", lightboxClose: "Închide fotografia", lightboxPrevious: "Fotografia anterioară", lightboxNext: "Fotografia următoare"
   },
   ru: {
     pageTitle: "Momentum — бесплатные занятия для 1–12 классов", metaDescription: "Бесплатные занятия и помощь с домашними заданиями для учеников 1–12 классов по воскресеньям.",
@@ -25,7 +25,7 @@ const translations = {
     scheduleLabel: "Расписание и место", scheduleTitle: "Расписание и место", scheduleBody: "Занятия проходят каждое воскресенье в Национальной детской библиотеке имени Иона Крянгэ, в читальном зале отдела для подростков.", locationDayLabel: "День", locationDayValue: "Каждое воскресенье", locationAddressLabel: "Адрес", locationAddressValue: "ул. Алексея Щусева 65, Кишинёв", locationEntranceLabel: "Вход", locationEntranceValue: "Со стороны ул. Пушкина, подъезд 1", locationRoomLabel: "Зал", locationRoomValue: "Отдел для подростков — читальный зал", openMap: "Открыть в Google Maps", mapTitle: "Карта Национальной детской библиотеки имени Иона Крянгэ",
     joinLabel: "Присоединиться", joinTitle: "Участие", enrollLabel: "Запись в клуб", enrollTitle: "Запишитесь в Momentum", enrollBody: "Заполните анкету на удобном для вас языке. Участие бесплатное.", enrollRomanian: "Анкета на румынском", enrollRussian: "Анкета на русском", studentCardLabel: "Хочу учиться", studentCardTitle: "Для учеников", studentCardBody: "Для участия напишите, в каком вы классе и по какому предмету нужна помощь. Мы подтвердим возможность участия в зависимости от доступности волонтёров.", studentCardLink: "Попросить помощь", volunteerCardLabel: "Хочу преподавать", volunteerCardTitle: "Для волонтёров", volunteerCardBody: "Школьники, участвующие в олимпиадах и желающие преподавать, могут подать заявку по электронной почте.", volunteerCardLink: "Стать волонтёром",
     contactLabel: "Контакты", contactTitle: "Контакты", contactBody: "По вопросам о занятиях, участии или волонтёрстве свяжитесь с нами по электронной почте.", footerNote: "Бесплатный образовательный клуб",
-    galleryPageTitle: "Галерея — Momentum", galleryMetaDescription: "Галерея Momentum — фотографии с бесплатных воскресных занятий.", galleryTitle: "Фотогалерея", galleryIntro: "Фотографии с занятий и мероприятий Momentum.", galleryPlaceholder: "Место для фотографии", galleryOpen: "Открыть фотографию", lightboxLabel: "Фотогалерея", lightboxClose: "Закрыть фотографию", lightboxPrevious: "Предыдущая фотография", lightboxNext: "Следующая фотография"
+    galleryPageTitle: "Галерея — Momentum", galleryMetaDescription: "Галерея Momentum — фотографии с бесплатных воскресных занятий.", galleryTitle: "Фотогалерея", galleryIntro: "Фотографии с занятий и мероприятий Momentum.", gallerySource: "Фотографии из официального аккаунта", galleryPlaceholder: "Место для фотографии", galleryOpen: "Открыть фотографию", lightboxLabel: "Фотогалерея", lightboxClose: "Закрыть фотографию", lightboxPrevious: "Предыдущая фотография", lightboxNext: "Следующая фотография"
   },
   en: {
     pageTitle: "Momentum — free lessons for grades 1–12", metaDescription: "Free lessons and homework support for students in grades 1–12 every Sunday.",
@@ -39,7 +39,7 @@ const translations = {
     scheduleLabel: "Schedule and location", scheduleTitle: "Schedule and location", scheduleBody: "Lessons take place every Sunday at the Ion Creangă National Children's Library, in the reading room of the Teenagers' Section.", locationDayLabel: "Day", locationDayValue: "Every Sunday", locationAddressLabel: "Address", locationAddressValue: "65 Alexei Șciusev Street, Chișinău", locationEntranceLabel: "Entrance", locationEntranceValue: "From Pușkin Street, entrance 1", locationRoomLabel: "Room", locationRoomValue: "Teenagers' Section — reading room", openMap: "Open in Google Maps", mapTitle: "Map of the Ion Creangă National Children's Library",
     joinLabel: "Get involved", joinTitle: "Participation", enrollLabel: "Club enrollment", enrollTitle: "Join Momentum", enrollBody: "Complete the form in the language you prefer. Participation is free.", enrollRomanian: "Romanian form", enrollRussian: "Russian form", studentCardLabel: "I want to learn", studentCardTitle: "For students", studentCardBody: "To participate, email us your grade and the subject in which you need help. Participation is confirmed according to volunteer availability.", studentCardLink: "Request help", volunteerCardLabel: "I want to teach", volunteerCardTitle: "For volunteers", volunteerCardBody: "Students who participate in olympiads and wish to teach may apply by email.", volunteerCardLink: "Become a volunteer",
     contactLabel: "Contact", contactTitle: "Contact", contactBody: "For information about lessons, participation, or volunteering, contact us by email.", footerNote: "Free educational club",
-    galleryPageTitle: "Gallery — Momentum", galleryMetaDescription: "Momentum gallery — photos from our free Sunday lessons.", galleryTitle: "Photo gallery", galleryIntro: "Photos from Momentum lessons and activities.", galleryPlaceholder: "Photo placeholder", galleryOpen: "Open photo", lightboxLabel: "Photo gallery", lightboxClose: "Close photo", lightboxPrevious: "Previous photo", lightboxNext: "Next photo"
+    galleryPageTitle: "Gallery — Momentum", galleryMetaDescription: "Momentum gallery — photos from our free Sunday lessons.", galleryTitle: "Photo gallery", galleryIntro: "Photos from Momentum lessons and activities.", gallerySource: "Photos from the official account", galleryPlaceholder: "Photo placeholder", galleryOpen: "Open photo", lightboxLabel: "Photo gallery", lightboxClose: "Close photo", lightboxPrevious: "Previous photo", lightboxNext: "Next photo"
   }
 };
 
@@ -101,11 +101,12 @@ navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click"
 languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
 document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeMenu(); });
 
-const galleryItems = [...document.querySelectorAll(".gallery-placeholder")];
+const galleryItems = [...document.querySelectorAll(".gallery-item")];
 const lightbox = document.querySelector(".lightbox");
 
 if (galleryItems.length && lightbox) {
   const preview = lightbox.querySelector(".lightbox-preview");
+  const previewImage = lightbox.querySelector("[data-lightbox-image]");
   const counter = lightbox.querySelector(".lightbox-counter");
   const previousButton = lightbox.querySelector(".lightbox-previous");
   const nextButton = lightbox.querySelector(".lightbox-next");
@@ -118,8 +119,7 @@ if (galleryItems.length && lightbox) {
   function showGalleryItem(index) {
     activeIndex = (index + galleryItems.length) % galleryItems.length;
     const item = galleryItems[activeIndex];
-    preview.style.backgroundImage = getComputedStyle(item).backgroundImage;
-    preview.querySelector("span").textContent = item.querySelector("span").textContent;
+    previewImage.src = item.querySelector("img").src;
     counter.textContent = `${activeIndex + 1} / ${galleryItems.length}`;
   }
 
@@ -140,16 +140,7 @@ if (galleryItems.length && lightbox) {
   }
 
   galleryItems.forEach((item, index) => {
-    item.setAttribute("role", "button");
-    item.setAttribute("tabindex", "0");
-    item.dataset.i18nAria = "galleryOpen";
     item.addEventListener("click", () => openLightbox(index));
-    item.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        openLightbox(index);
-      }
-    });
   });
 
   previousButton.addEventListener("click", () => showGalleryItem(activeIndex - 1));

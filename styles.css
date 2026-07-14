@@ -107,7 +107,7 @@ h1 { max-width: 780px; margin-bottom: 28px; color: var(--navy); font-family: var
 .gallery-hero p:not(.section-label) { max-width: 650px; margin: 0; color: var(--gray); font-size: 1.04rem; }
 .gallery-content { padding: 90px 0 120px; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
-.gallery-item { display: block; aspect-ratio: 4/3; overflow: hidden; padding: 0; border: 0; background: var(--light); cursor: zoom-in; }
+.gallery-item { display: block; aspect-ratio: 4/3; overflow: hidden; padding: 0; border: 0; background: var(--light); cursor: zoom-in; content-visibility: auto; contain-intrinsic-size: 300px 225px; }
 .gallery-item img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .25s ease; }
 .gallery-item:hover img { transform: scale(1.025); }
 .gallery-item:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }

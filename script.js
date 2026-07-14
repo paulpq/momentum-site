@@ -101,6 +101,30 @@ navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click"
 languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
 document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeMenu(); });
 
+const galleryGrid = document.querySelector("[data-gallery-grid]");
+
+if (galleryGrid) {
+  const photoCount = 318;
+  const fragment = document.createDocumentFragment();
+  for (let number = 1; number <= photoCount; number += 1) {
+    const extension = (number >= 70 && number <= 157) || (number >= 246 && number <= 259) ? "webp" : "jpg";
+    const paddedNumber = String(number).padStart(3, "0");
+    const button = document.createElement("button");
+    const image = document.createElement("img");
+    button.className = "gallery-item";
+    button.type = "button";
+    button.dataset.i18nAria = "galleryOpen";
+    button.setAttribute("aria-label", "Deschide fotografia");
+    image.src = `/assets/gallery-all/momentum-${paddedNumber}.${extension}`;
+    image.alt = "";
+    image.loading = number <= 8 ? "eager" : "lazy";
+    image.decoding = "async";
+    button.append(image);
+    fragment.append(button);
+  }
+  galleryGrid.append(fragment);
+}
+
 const galleryItems = [...document.querySelectorAll(".gallery-item")];
 const lightbox = document.querySelector(".lightbox");
 

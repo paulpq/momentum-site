@@ -172,7 +172,7 @@ function fillGalleryTemplate(template, item, language) {
 }
 
 function updateGalleryDates(language) {
-  document.querySelectorAll("[data-gallery-date]").forEach((time) => {
+  document.querySelectorAll("time[data-gallery-date]").forEach((time) => {
     time.textContent = formatGalleryDate(time.dataset.galleryDate, language);
   });
 }

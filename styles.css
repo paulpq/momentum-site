@@ -29,7 +29,6 @@ img { display: block; max-width: 100%; }
 .main-nav { margin-left: auto; display: flex; align-items: center; gap: 27px; }
 .main-nav > a { color: var(--gray); font-size: .79rem; font-weight: 650; text-decoration: none; }
 .main-nav > a:hover, .main-nav > a.active { color: var(--navy); }
-.mobile-enroll { display: none; }
 .languages { display: flex; padding-left: 15px; border-left: 1px solid var(--line); }
 .languages button { padding: 4px 6px; border: 0; color: #8a9198; background: transparent; cursor: pointer; font-size: .67rem; font-weight: 700; }
 .languages button:hover, .languages button.active { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
@@ -180,9 +179,6 @@ footer { padding: 42px 0 24px; background: white; }
   .main-nav > a::after { content: "→"; color: #9ca3aa; font-size: 1rem; font-weight: 400; }
   .main-nav > a.active { padding-left: 16px; color: var(--navy); background: var(--light); }
   .main-nav > a.active::after { color: var(--navy); }
-  .main-nav .mobile-enroll { min-height: 56px; display: flex; margin-top: 20px; padding: 0 16px; color: white; background: var(--navy); border: 1px solid var(--navy); }
-  .main-nav .mobile-enroll.active { color: white; background: var(--navy-dark); }
-  .main-nav .mobile-enroll::after { color: white; }
   .languages { width: 100%; justify-content: stretch; gap: 0; margin-top: 14px; padding: 6px; background: var(--light); border: 0; }
   .languages button { flex: 1; min-width: 48px; min-height: 44px; padding: 10px 12px; }
   .languages button.active { color: white; background: var(--navy); text-decoration: none; }

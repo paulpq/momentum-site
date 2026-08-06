@@ -144,11 +144,9 @@ body.lightbox-open { overflow: hidden; }
 .contact-links { border-top: 1px solid var(--line); }
 .contact-links a { min-height: 62px; display: flex; align-items: center; gap: 14px; padding: 12px 4px; color: var(--navy); border-bottom: 1px solid var(--line); font-size: .92rem; font-weight: 650; text-decoration: none; transition: color .15s ease, background .15s ease; }
 .contact-links a::after { content: "↗"; margin-left: auto; color: var(--muted); font-size: .85rem; font-weight: 400; }
-.contact-links a[href^="tel:"]::after { content: "→"; }
 .contact-links a:hover { color: var(--navy-dark); background: var(--light); }
 .contact-icon { width: 28px; height: 28px; flex: 0 0 28px; display: grid; place-items: center; color: var(--navy); font-family: var(--sans); font-size: 1.12rem; line-height: 1; }
 .contact-icon img { width: 20px; height: 20px; display: block; }
-.contact-icon-phone { font-family: "Segoe UI Symbol", "Apple Symbols", sans-serif; font-size: 1rem; }
 
 footer { padding: 42px 0 24px; background: white; border-top: 1px solid var(--line); }
 .footer-wrap { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }

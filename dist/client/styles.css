@@ -36,6 +36,14 @@ img { display: block; max-width: 100%; }
 .menu-button { display: none; width: 42px; height: 42px; margin-left: auto; padding: 11px; border: 1px solid var(--line); color: var(--navy); background: white; cursor: pointer; }
 .menu-button span { display: block; width: 18px; height: 1px; margin: 5px auto; background: currentColor; }
 
+.announcement { color: white; background: var(--navy); }
+.announcement-link { min-height: 50px; display: flex; align-items: center; gap: 18px; padding-block: 10px; text-decoration: none; }
+.announcement-label { padding-right: 18px; border-right: 1px solid rgba(255,255,255,.35); font-size: .68rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.announcement-text { font-size: .9rem; font-weight: 650; }
+.announcement-arrow { margin-left: auto; font-size: 1.05rem; transition: transform .15s ease; }
+.announcement-link:hover .announcement-arrow { transform: translateX(4px); }
+.announcement-link:focus-visible { outline: 2px solid white; outline-offset: -4px; }
+
 .hero { padding: 110px 0 104px; border-bottom: 1px solid var(--line); }
 .hero-grid { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(280px,.65fr); align-items: end; gap: 105px; }
 .label, .section-label, .small-label { margin: 0; color: var(--navy); font-size: .68rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
@@ -193,6 +201,9 @@ footer { padding: 42px 0 24px; background: white; border-top: 1px solid var(--li
   .languages { width: 100%; justify-content: stretch; gap: 0; margin-top: 14px; padding: 6px; background: var(--light); border: 0; }
   .languages button { flex: 1; min-width: 48px; min-height: 44px; padding: 10px 12px; }
   .languages button.active { color: white; background: var(--navy); text-decoration: none; }
+  .announcement-link { min-height: 54px; gap: 11px; padding-block: 10px; }
+  .announcement-label { padding-right: 11px; font-size: .62rem; }
+  .announcement-text { font-size: .82rem; line-height: 1.35; }
   .hero { padding: 64px 0 68px; }
   .statement, .section { padding: 68px 0; }
   .hero-grid { gap: 48px; }

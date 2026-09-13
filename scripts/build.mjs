@@ -13,7 +13,7 @@ await mkdir(resolve(client, "assets"), { recursive: true });
 await mkdir(resolve(client, "assets/icons"), { recursive: true });
 await writeFile(resolve(client, ".nojekyll"), "");
 
-for (const asset of ["index.html", "gallery.html", "styles.css", "script.js", "favicon.png", "favicon-32.png", "apple-touch-icon.png"]) {
+for (const asset of ["index.html", "gallery.html", "styles.css", "script.js", "favicon.png", "favicon-32.png", "apple-touch-icon.png", "robots.txt", "sitemap.xml", "CNAME"]) {
   await cp(resolve(root, asset), resolve(client, asset));
 }
 await cp(resolve(root, "public/og-sunday.png"), resolve(client, "og-sunday.png"));
